@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("b37ec292-f798-4d5c-adb5-a88d40465c4f",{name:"User"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>examples.users.LippiaAPI</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-04 03:27:04 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>POST Token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/LippiaAPI.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Swagger</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">TokenLippiaAPI</a><a class="badge badge-primary" href="karate-tags.html">ok</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">POST Token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1355</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlTokenLippiaAPI</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:27:02.995 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = &#39;admin-cli&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">90</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &#39;password&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field username = &#39;automation.ltm&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field password = &#39;1234&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1257</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">15:27:03.406 request:
+1 &gt; POST https://authdev.lippia.io/realms/mvptest.lippia.io/protocol/openid-connect/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 77
+1 &gt; Host: authdev.lippia.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+client_id=admin-cli&amp;grant_type=password&amp;username=automation.ltm&amp;password=1234
+
+15:27:04.333 response time in milliseconds: 925
+1 &lt; 200
+1 &lt; Date: Wed, 04 Oct 2023 18:27:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 2045
+1 &lt; Connection: keep-alive
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Cache-Control: no-store
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Set-Cookie: KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/mvptest.lippia.io/; HttpOnly
+1 &lt; Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/mvptest.lippia.io/; HttpOnly
+1 &lt; Pragma: no-cache
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnUU92dmhEUXhMdEZwblFlTG4wOXJPOTRMODRfV3BMU1NqdTQwNE5uMU5vIn0.eyJleHAiOjE2OTY0NDU4MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiOTJkY2MxZTQtZWVjYi00NmVjLWE1NTktMzg1OTg1OGZkNmRjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJzdWIiOiIyNTJhOWE1ZC1mNTNkLTRjYzMtYjIzZC1mNTFhNjE2MDRhOTQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJBdXRvbWF0aW9uVG9rZW4gVXNlclRva2VuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYXV0b21hdGlvbi5sdG0iLCJnaXZlbl9uYW1lIjoiQXV0b21hdGlvblRva2VuIiwiZmFtaWx5X25hbWUiOiJVc2VyVG9rZW4iLCJlbWFpbCI6ImF1dG9tYXRpb25sdG1AZ21haWwuY29tIn0.FOdYQ0Sap4EzsueHM41jJkmCB8v_9Cl9VqENIj-7M57LDtx4Atqe9_V44ggRIC8ONzb0ACuvec7rQnevMCkG-IifpmKmmjxOPuEGrBvq6uCPXhFg-Kcg_BKag9_OvTJ5-VJfoZNcxGmSlqNsynCQH-3fTsCggp1wxtECtjnIl5n2jS4kbPBjZdW6AcyM1oReonfW5zNlGN6ea_MWrP980O_2lhVt0Vc-wdCTjkHiusH6302CDw8ML7Z-E2sQ2MZMJ5Zv7AH7zxKIaDSIpl9dxFMUIPm6sm2fduNNAC8HCf4RdOdesBjrnTNOnd2tH5y-dQ5qlvt0xPiVU2_RCimCnw&quot;,&quot;expires_in&quot;:1800,&quot;refresh_expires_in&quot;:3600,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIzNzJhZmFmOS01YTU1LTRkOWEtYmY2Mi0wNGFmODNkMjU3OTgifQ.eyJleHAiOjE2OTY0NDc2MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiNWI2NGQyZDgtOTg4Mi00MDlmLWIzNjgtMzczMDE3OTA4NzRhIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJhdWQiOiJodHRwczovL2F1dGhkZXYubGlwcGlhLmlvL3JlYWxtcy9tdnB0ZXN0LmxpcHBpYS5pbyIsInN1YiI6IjI1MmE5YTVkLWY1M2QtNGNjMy1iMjNkLWY1MWE2MTYwNGE5NCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2In0.sxM45iW-6vEezOqi5hPQbz0ffu5wHgLoXvpT8zDMpWI&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;not-before-policy&quot;:0,&quot;session_state&quot;:&quot;90288437-61f2-4200-9714-93eff9304b16&quot;,&quot;scope&quot;:&quot;email profile&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print auth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">15:27:04.382 [print] eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnUU92dmhEUXhMdEZwblFlTG4wOXJPOTRMODRfV3BMU1NqdTQwNE5uMU5vIn0.eyJleHAiOjE2OTY0NDU4MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiOTJkY2MxZTQtZWVjYi00NmVjLWE1NTktMzg1OTg1OGZkNmRjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJzdWIiOiIyNTJhOWE1ZC1mNTNkLTRjYzMtYjIzZC1mNTFhNjE2MDRhOTQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJBdXRvbWF0aW9uVG9rZW4gVXNlclRva2VuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYXV0b21hdGlvbi5sdG0iLCJnaXZlbl9uYW1lIjoiQXV0b21hdGlvblRva2VuIiwiZmFtaWx5X25hbWUiOiJVc2VyVG9rZW4iLCJlbWFpbCI6ImF1dG9tYXRpb25sdG1AZ21haWwuY29tIn0.FOdYQ0Sap4EzsueHM41jJkmCB8v_9Cl9VqENIj-7M57LDtx4Atqe9_V44ggRIC8ONzb0ACuvec7rQnevMCkG-IifpmKmmjxOPuEGrBvq6uCPXhFg-Kcg_BKag9_OvTJ5-VJfoZNcxGmSlqNsynCQH-3fTsCggp1wxtECtjnIl5n2jS4kbPBjZdW6AcyM1oReonfW5zNlGN6ea_MWrP980O_2lhVt0Vc-wdCTjkHiusH6302CDw8ML7Z-E2sQ2MZMJ5Zv7AH7zxKIaDSIpl9dxFMUIPm6sm2fduNNAC8HCf4RdOdesBjrnTNOnd2tH5y-dQ5qlvt0xPiVU2_RCimCnw 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

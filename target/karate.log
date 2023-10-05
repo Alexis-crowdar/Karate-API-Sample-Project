@@ -1,0 +1,33 @@
+15:27:01.321 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @ok
+15:27:02.207 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:27:02.229 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+15:27:02.994 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:27:03.406 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://authdev.lippia.io/realms/mvptest.lippia.io/protocol/openid-connect/token
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 77
+1 > Host: authdev.lippia.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+client_id=admin-cli&grant_type=password&username=automation.ltm&password=1234
+
+15:27:04.332 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 925
+1 < 200
+1 < Date: Wed, 04 Oct 2023 18:27:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 2045
+1 < Connection: keep-alive
+1 < Referrer-Policy: no-referrer
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 < Cache-Control: no-store
+1 < X-Content-Type-Options: nosniff
+1 < Set-Cookie: KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/mvptest.lippia.io/; HttpOnly
+1 < Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/mvptest.lippia.io/; HttpOnly
+1 < Pragma: no-cache
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnUU92dmhEUXhMdEZwblFlTG4wOXJPOTRMODRfV3BMU1NqdTQwNE5uMU5vIn0.eyJleHAiOjE2OTY0NDU4MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiOTJkY2MxZTQtZWVjYi00NmVjLWE1NTktMzg1OTg1OGZkNmRjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJzdWIiOiIyNTJhOWE1ZC1mNTNkLTRjYzMtYjIzZC1mNTFhNjE2MDRhOTQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJBdXRvbWF0aW9uVG9rZW4gVXNlclRva2VuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYXV0b21hdGlvbi5sdG0iLCJnaXZlbl9uYW1lIjoiQXV0b21hdGlvblRva2VuIiwiZmFtaWx5X25hbWUiOiJVc2VyVG9rZW4iLCJlbWFpbCI6ImF1dG9tYXRpb25sdG1AZ21haWwuY29tIn0.FOdYQ0Sap4EzsueHM41jJkmCB8v_9Cl9VqENIj-7M57LDtx4Atqe9_V44ggRIC8ONzb0ACuvec7rQnevMCkG-IifpmKmmjxOPuEGrBvq6uCPXhFg-Kcg_BKag9_OvTJ5-VJfoZNcxGmSlqNsynCQH-3fTsCggp1wxtECtjnIl5n2jS4kbPBjZdW6AcyM1oReonfW5zNlGN6ea_MWrP980O_2lhVt0Vc-wdCTjkHiusH6302CDw8ML7Z-E2sQ2MZMJ5Zv7AH7zxKIaDSIpl9dxFMUIPm6sm2fduNNAC8HCf4RdOdesBjrnTNOnd2tH5y-dQ5qlvt0xPiVU2_RCimCnw","expires_in":1800,"refresh_expires_in":3600,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIzNzJhZmFmOS01YTU1LTRkOWEtYmY2Mi0wNGFmODNkMjU3OTgifQ.eyJleHAiOjE2OTY0NDc2MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiNWI2NGQyZDgtOTg4Mi00MDlmLWIzNjgtMzczMDE3OTA4NzRhIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJhdWQiOiJodHRwczovL2F1dGhkZXYubGlwcGlhLmlvL3JlYWxtcy9tdnB0ZXN0LmxpcHBpYS5pbyIsInN1YiI6IjI1MmE5YTVkLWY1M2QtNGNjMy1iMjNkLWY1MWE2MTYwNGE5NCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2In0.sxM45iW-6vEezOqi5hPQbz0ffu5wHgLoXvpT8zDMpWI","token_type":"Bearer","not-before-policy":0,"session_state":"90288437-61f2-4200-9714-93eff9304b16","scope":"email profile"}
+
+15:27:04.381 [pool-1-thread-1] INFO  com.intuit.karate - [print] eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnUU92dmhEUXhMdEZwblFlTG4wOXJPOTRMODRfV3BMU1NqdTQwNE5uMU5vIn0.eyJleHAiOjE2OTY0NDU4MjUsImlhdCI6MTY5NjQ0NDAyNSwianRpIjoiOTJkY2MxZTQtZWVjYi00NmVjLWE1NTktMzg1OTg1OGZkNmRjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoZGV2LmxpcHBpYS5pby9yZWFsbXMvbXZwdGVzdC5saXBwaWEuaW8iLCJzdWIiOiIyNTJhOWE1ZC1mNTNkLTRjYzMtYjIzZC1mNTFhNjE2MDRhOTQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2Iiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOTAyODg0MzctNjFmMi00MjAwLTk3MTQtOTNlZmY5MzA0YjE2IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJBdXRvbWF0aW9uVG9rZW4gVXNlclRva2VuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYXV0b21hdGlvbi5sdG0iLCJnaXZlbl9uYW1lIjoiQXV0b21hdGlvblRva2VuIiwiZmFtaWx5X25hbWUiOiJVc2VyVG9rZW4iLCJlbWFpbCI6ImF1dG9tYXRpb25sdG1AZ21haWwuY29tIn0.FOdYQ0Sap4EzsueHM41jJkmCB8v_9Cl9VqENIj-7M57LDtx4Atqe9_V44ggRIC8ONzb0ACuvec7rQnevMCkG-IifpmKmmjxOPuEGrBvq6uCPXhFg-Kcg_BKag9_OvTJ5-VJfoZNcxGmSlqNsynCQH-3fTsCggp1wxtECtjnIl5n2jS4kbPBjZdW6AcyM1oReonfW5zNlGN6ea_MWrP980O_2lhVt0Vc-wdCTjkHiusH6302CDw8ML7Z-E2sQ2MZMJ5Zv7AH7zxKIaDSIpl9dxFMUIPm6sm2fduNNAC8HCf4RdOdesBjrnTNOnd2tH5y-dQ5qlvt0xPiVU2_RCimCnw 
+15:27:04.930 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/users/LippiaAPI.feature
