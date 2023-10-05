@@ -7,7 +7,7 @@ function fn() {
   var config = {
     env: env,
     myVarName: 'someValue',
-    urlRnM: 'https://rickandmortyapi.com/api/',
+    urlRickAndMorty: 'https://rickandmortyapi.com/api/',
     urlTokenLippiaAPI: 'https://authdev.lippia.io/realms/mvptest.lippia.io/protocol/openid-connect/token',
     urlLippiaAPI: 'https://backend-mvp.test.lippia.io/testmanager-mvp/'
   }

@@ -40,12 +40,12 @@
             <properties>
                 <profileName>inyectorTest</profileName>
                 <testmanager.host>https://runs.test.lippia.io</testmanager.host>
-                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                 <test.manager.project.code>KARATE</test.manager.project.code>
                 <test.manager.run.name>Pruebas inyeccion karate</test.manager.run.name>
                 <TEST_MANAGER_USERNAME>${test.manager.username}</TEST_MANAGER_USERNAME>
                 <TEST_MANAGER_PASSWORD>${test.manager.password}</TEST_MANAGER_PASSWORD>
-                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
             </properties>
         </profile>
     </profiles>
@@ -85,8 +85,8 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <systemPropertyVariables>
-                        <!--<zalenium.hub>${crowdar.driverHub}</zalenium.hub>
-                        <build.identifier>${buildIdentifier}</build.identifier>-->
+                    <!--<zalenium.hub>${crowdar.driverHub}</zalenium.hub>-->
+                    <!--<build.identifier>${buildIdentifier}</build.identifier>-->
                         <TEST_MANAGER_API_HOST>${testmanager.host}</TEST_MANAGER_API_HOST>
                         <TEST_MANAGER_RUN_NAME>${test.manager.run.name}</TEST_MANAGER_RUN_NAME>
                         <TEST_MANAGER_PROJECT_CODE>${test.manager.project.code}</TEST_MANAGER_PROJECT_CODE>
