@@ -17,7 +17,7 @@
         <ltm.username>admin</ltm.username>
         <ltm.password>admin</ltm.password>
         <!--- RUN NAME -->
-        <ltm.run_name>aut sample #11</ltm.run_name>
+        <ltm.run_name>aut sample #12</ltm.run_name>
         <!--- CODE PROJECT -->
         <ltm.project_code>KARATE</ltm.project_code>
     </properties>

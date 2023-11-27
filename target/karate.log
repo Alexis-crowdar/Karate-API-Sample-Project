@@ -1,7 +1,11 @@
-15:30:15.825 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-15:30:17.078 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-15:30:17.078 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-15:30:17.140 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+16:52:03.539 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:52:03.546 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:52:04.437 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:04.437 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:04.437 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:04.437 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:04.437 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:04.491 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > GET https://jsonplaceholder.typicode.com/users
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
@@ -9,19 +13,50 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-15:30:17.245 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/users
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 160
-1 > Host: jsonplaceholder.typicode.com
+16:52:04.548 [pool-1-thread-4] WARN  com.intuit.karate - remove failed: Missing property in path $['tag']
+16:52:04.550 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/1
+1 > Host: rickandmortyapi.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
 1 > Accept-Encoding: gzip,deflate
-{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-15:30:17.340 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 196
+
+16:52:04.550 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/2
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:52:04.592 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > 'accept': application/json
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+16:52:04.592 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > 'accept': application/json
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 177
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available","tag":[null,{"id":"15","name":"tag2"}]}
+
+16:52:04.664 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 162
 1 < 200
-1 < Date: Thu, 16 Nov 2023 18:30:18 GMT
+1 < Date: Mon, 27 Nov 2023 19:52:05 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -41,9 +76,9 @@
 1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: HIT
-1 < Age: 456
+1 < Age: 23890
 1 < Server: cloudflare
-1 < CF-RAY: 8271cdea7acb1eb7-EZE
+1 < CF-RAY: 82cce8d83a14c1a0-EZE
 1 < alt-svc: h3=":443"; ma=86400
 [
   {
@@ -278,7 +313,7 @@
   }
 ]
 
-15:30:17.368 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+16:52:04.680 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 2 > GET https://jsonplaceholder.typicode.com/users/1
 2 > Host: jsonplaceholder.typicode.com
 2 > Connection: Keep-Alive
@@ -286,19 +321,19 @@
 2 > Accept-Encoding: gzip,deflate
 
 
-15:30:17.473 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 104
+16:52:04.784 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 103
 2 < 200
-2 < Date: Thu, 16 Nov 2023 18:30:18 GMT
+2 < Date: Mon, 27 Nov 2023 19:52:05 GMT
 2 < Content-Type: application/json; charset=utf-8
 2 < Transfer-Encoding: chunked
 2 < Connection: keep-alive
-2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700152384&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rKBWfcCR6NRHhuuQSb1eKeKf1BEwmuf49avknsLee9k%3D"}]}
-2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700152384&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rKBWfcCR6NRHhuuQSb1eKeKf1BEwmuf49avknsLee9k%3D
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700586414&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=6fbPOXwjOAPwXkA0yYsWb%2FQe2u2nDYX8UTVDagIVtxE%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700586414&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=6fbPOXwjOAPwXkA0yYsWb%2FQe2u2nDYX8UTVDagIVtxE%3D
 2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 2 < X-Powered-By: Express
 2 < X-Ratelimit-Limit: 1000
-2 < X-Ratelimit-Remaining: 999
-2 < X-Ratelimit-Reset: 1700152402
+2 < X-Ratelimit-Remaining: 998
+2 < X-Ratelimit-Reset: 1700586453
 2 < Vary: Origin, Accept-Encoding
 2 < Access-Control-Allow-Credentials: true
 2 < Cache-Control: max-age=43200
@@ -308,9 +343,9 @@
 2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
 2 < Via: 1.1 vegur
 2 < CF-Cache-Status: HIT
-2 < Age: 7034
+2 < Age: 3366
 2 < Server: cloudflare
-2 < CF-RAY: 8271cdeb5c51c813-EZE
+2 < CF-RAY: 82cce8d8faada771-EZE
 2 < alt-svc: h3=":443"; ma=86400
 {
   "id": 1,
@@ -336,19 +371,270 @@
   }
 }
 
-15:30:17.530 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 284
+16:52:04.919 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 369
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 27853
+1 < Cache-Control: max-age=259200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 < Etag: W/"a6e-zQHAPIKFfD+Wv+P+4aCju24Mapw"
+1 < Expires: Thu, 30 Nov 2023 12:07:53 GMT
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < Vary: Accept-Encoding
+1 < X-Nf-Request-Id: 01HG95DH14TKFXQFA5A6Z866AQ
+1 < X-Powered-By: Express
+{"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/50","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/2","created":"2017-11-04T18:50:21.651Z"}
+
+16:52:04.919 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 369
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 27853
+1 < Cache-Control: max-age=259200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 < Etag: W/"a9f-I68Cx5oSPFclkl+Wy2Fr9jNsFS8"
+1 < Expires: Thu, 30 Nov 2023 12:07:52 GMT
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < Vary: Accept-Encoding
+1 < X-Nf-Request-Id: 01HG95DH14D6TTKBC9FZN7G8M0
+1 < X-Powered-By: Express
+{"id":1,"name":"Rick Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/50","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/1","created":"2017-11-04T18:48:46.250Z"}
+
+16:52:04.933 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "name": "Rick Sanchez",
+  "status": "Alive",
+  "species": "Human",
+  "type": "",
+  "gender": "Male",
+  "origin": {
+    "name": "Earth (C-137)",
+    "url": "https://rickandmortyapi.com/api/location/1"
+  },
+  "location": {
+    "name": "Citadel of Ricks",
+    "url": "https://rickandmortyapi.com/api/location/3"
+  },
+  "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+  "episode": [
+    "https://rickandmortyapi.com/api/episode/1",
+    "https://rickandmortyapi.com/api/episode/2",
+    "https://rickandmortyapi.com/api/episode/3",
+    "https://rickandmortyapi.com/api/episode/4",
+    "https://rickandmortyapi.com/api/episode/5",
+    "https://rickandmortyapi.com/api/episode/6",
+    "https://rickandmortyapi.com/api/episode/7",
+    "https://rickandmortyapi.com/api/episode/8",
+    "https://rickandmortyapi.com/api/episode/9",
+    "https://rickandmortyapi.com/api/episode/10",
+    "https://rickandmortyapi.com/api/episode/11",
+    "https://rickandmortyapi.com/api/episode/12",
+    "https://rickandmortyapi.com/api/episode/13",
+    "https://rickandmortyapi.com/api/episode/14",
+    "https://rickandmortyapi.com/api/episode/15",
+    "https://rickandmortyapi.com/api/episode/16",
+    "https://rickandmortyapi.com/api/episode/17",
+    "https://rickandmortyapi.com/api/episode/18",
+    "https://rickandmortyapi.com/api/episode/19",
+    "https://rickandmortyapi.com/api/episode/20",
+    "https://rickandmortyapi.com/api/episode/21",
+    "https://rickandmortyapi.com/api/episode/22",
+    "https://rickandmortyapi.com/api/episode/23",
+    "https://rickandmortyapi.com/api/episode/24",
+    "https://rickandmortyapi.com/api/episode/25",
+    "https://rickandmortyapi.com/api/episode/26",
+    "https://rickandmortyapi.com/api/episode/27",
+    "https://rickandmortyapi.com/api/episode/28",
+    "https://rickandmortyapi.com/api/episode/29",
+    "https://rickandmortyapi.com/api/episode/30",
+    "https://rickandmortyapi.com/api/episode/31",
+    "https://rickandmortyapi.com/api/episode/32",
+    "https://rickandmortyapi.com/api/episode/33",
+    "https://rickandmortyapi.com/api/episode/34",
+    "https://rickandmortyapi.com/api/episode/35",
+    "https://rickandmortyapi.com/api/episode/36",
+    "https://rickandmortyapi.com/api/episode/37",
+    "https://rickandmortyapi.com/api/episode/38",
+    "https://rickandmortyapi.com/api/episode/39",
+    "https://rickandmortyapi.com/api/episode/40",
+    "https://rickandmortyapi.com/api/episode/41",
+    "https://rickandmortyapi.com/api/episode/42",
+    "https://rickandmortyapi.com/api/episode/43",
+    "https://rickandmortyapi.com/api/episode/44",
+    "https://rickandmortyapi.com/api/episode/45",
+    "https://rickandmortyapi.com/api/episode/46",
+    "https://rickandmortyapi.com/api/episode/47",
+    "https://rickandmortyapi.com/api/episode/48",
+    "https://rickandmortyapi.com/api/episode/49",
+    "https://rickandmortyapi.com/api/episode/50",
+    "https://rickandmortyapi.com/api/episode/51"
+  ],
+  "url": "https://rickandmortyapi.com/api/character/1",
+  "created": "2017-11-04T18:48:46.250Z"
+}
+ 
+16:52:04.933 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "id": 2,
+  "name": "Morty Smith",
+  "status": "Alive",
+  "species": "Human",
+  "type": "",
+  "gender": "Male",
+  "origin": {
+    "name": "unknown",
+    "url": ""
+  },
+  "location": {
+    "name": "Citadel of Ricks",
+    "url": "https://rickandmortyapi.com/api/location/3"
+  },
+  "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+  "episode": [
+    "https://rickandmortyapi.com/api/episode/1",
+    "https://rickandmortyapi.com/api/episode/2",
+    "https://rickandmortyapi.com/api/episode/3",
+    "https://rickandmortyapi.com/api/episode/4",
+    "https://rickandmortyapi.com/api/episode/5",
+    "https://rickandmortyapi.com/api/episode/6",
+    "https://rickandmortyapi.com/api/episode/7",
+    "https://rickandmortyapi.com/api/episode/8",
+    "https://rickandmortyapi.com/api/episode/9",
+    "https://rickandmortyapi.com/api/episode/10",
+    "https://rickandmortyapi.com/api/episode/11",
+    "https://rickandmortyapi.com/api/episode/12",
+    "https://rickandmortyapi.com/api/episode/13",
+    "https://rickandmortyapi.com/api/episode/14",
+    "https://rickandmortyapi.com/api/episode/15",
+    "https://rickandmortyapi.com/api/episode/16",
+    "https://rickandmortyapi.com/api/episode/17",
+    "https://rickandmortyapi.com/api/episode/18",
+    "https://rickandmortyapi.com/api/episode/19",
+    "https://rickandmortyapi.com/api/episode/20",
+    "https://rickandmortyapi.com/api/episode/21",
+    "https://rickandmortyapi.com/api/episode/22",
+    "https://rickandmortyapi.com/api/episode/23",
+    "https://rickandmortyapi.com/api/episode/24",
+    "https://rickandmortyapi.com/api/episode/25",
+    "https://rickandmortyapi.com/api/episode/26",
+    "https://rickandmortyapi.com/api/episode/27",
+    "https://rickandmortyapi.com/api/episode/28",
+    "https://rickandmortyapi.com/api/episode/29",
+    "https://rickandmortyapi.com/api/episode/30",
+    "https://rickandmortyapi.com/api/episode/31",
+    "https://rickandmortyapi.com/api/episode/32",
+    "https://rickandmortyapi.com/api/episode/33",
+    "https://rickandmortyapi.com/api/episode/34",
+    "https://rickandmortyapi.com/api/episode/35",
+    "https://rickandmortyapi.com/api/episode/36",
+    "https://rickandmortyapi.com/api/episode/37",
+    "https://rickandmortyapi.com/api/episode/38",
+    "https://rickandmortyapi.com/api/episode/39",
+    "https://rickandmortyapi.com/api/episode/40",
+    "https://rickandmortyapi.com/api/episode/41",
+    "https://rickandmortyapi.com/api/episode/42",
+    "https://rickandmortyapi.com/api/episode/43",
+    "https://rickandmortyapi.com/api/episode/44",
+    "https://rickandmortyapi.com/api/episode/45",
+    "https://rickandmortyapi.com/api/episode/46",
+    "https://rickandmortyapi.com/api/episode/47",
+    "https://rickandmortyapi.com/api/episode/48",
+    "https://rickandmortyapi.com/api/episode/49",
+    "https://rickandmortyapi.com/api/episode/50",
+    "https://rickandmortyapi.com/api/episode/51"
+  ],
+  "url": "https://rickandmortyapi.com/api/character/2",
+  "created": "2017-11-04T18:50:21.651Z"
+}
+ 
+16:52:05.196 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:05.202 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+16:52:05.388 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 796
+1 < 200
+1 < Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854775807,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+16:52:05.392 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "id": 9223372036854775807,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
+ 
+16:52:05.409 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 817
+1 < 200
+1 < Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854775807,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+16:52:05.413 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "id": 9223372036854775807,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
+ 
+16:52:05.744 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 541
 1 < 201
-1 < Date: Thu, 16 Nov 2023 18:30:18 GMT
+1 < Date: Mon, 27 Nov 2023 19:52:06 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 216
 1 < Connection: keep-alive
-1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700159418&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=hX5C4hMUYhLgRc48jQYtZ33St4Vfe5wpkduhdaJ0xb4%3D"}]}
-1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700159418&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=hX5C4hMUYhLgRc48jQYtZ33St4Vfe5wpkduhdaJ0xb4%3D
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701114726&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=5dPTr%2BTy4aoJEtQSqM8lgjkjXz2Kmh4e7xQwSoQ0hsc%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701114726&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=5dPTr%2BTy4aoJEtQSqM8lgjkjXz2Kmh4e7xQwSoQ0hsc%3D
 1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1700159422
+1 < X-Ratelimit-Reset: 1701114763
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Access-Control-Allow-Credentials: true
 1 < Cache-Control: no-cache
@@ -361,7 +647,7 @@
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
 1 < Server: cloudflare
-1 < CF-RAY: 8271cdeac8831ea4-EZE
+1 < CF-RAY: 82cce8dc39e01f06-EZE
 1 < alt-svc: h3=":443"; ma=86400
 {
   "name": "Test User",
@@ -376,5 +662,6 @@
   "id": 11
 }
 
-15:30:17.535 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
-15:30:19.214 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+16:52:05.747 [pool-1-thread-5] INFO  com.intuit.karate - [print] created id is:  11 
+16:52:06.604 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/Sample.feature
+16:52:06.680 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/users/users.feature
