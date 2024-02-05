@@ -9,8 +9,6 @@ function fn() {
     myVarName: 'someValue',
     urlRickAndMorty: 'https://rickandmortyapi.com/api/',
     urlPetStore: 'https://petstore.swagger.io/v2/',
-    urlTokenLippiaAPI: 'https://authdev.lippia.io/realms/mvptest.lippia.io/protocol/openid-connect/token',
-    urlLippiaAPI: 'https://backend-mvp.test.lippia.io/testmanager-mvp/'
   }
   if (env == 'dev') {
     // customize

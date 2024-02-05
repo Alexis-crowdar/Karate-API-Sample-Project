@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("b37ec292-f798-4d5c-adb5-a88d40465c4f",{name:"User"});
+    posthog.identify("771402d6-979b-4d67-a175-ab66bba0cf3b",{name:"carla"});
     posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
   }
 });
@@ -37,15 +37,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">4</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-11-27 04:52:06 p. m.</div>
+    <div>2024-02-05 11:07:43 a. m.</div>
   </div>        
 </div>
 
@@ -59,7 +59,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="nav-item passed">
             <a href="#[2.1:38]"><span>[2.1:38]</span> <span>Add a new pet to the store</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[3.1:60]"><span>[3.1:60]</span> <span>Add a new pet to the store</span></a>
           </div>
         </div>
@@ -86,7 +86,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>461</span>
+              <span>ms:</span>&nbsp;<span>774</span>
             </div>
           </div>
           
@@ -100,10 +100,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/schemas/character.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/jsonResponse/character.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -112,7 +112,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.6">16:52:04.442 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.6">11:07:41.163 karate.env system property was: null 
 </div>   
 
   
@@ -132,7 +132,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlRickAndMorty</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -160,7 +160,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;character&#39;, &#39;1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">16</div>
   </div>
 
    
@@ -188,7 +188,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">372</div>
+    <div class="time-cell passed">632</div>
   </div>
 
    
@@ -197,27 +197,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.9">16:52:04.550 request:
+  <div class="preformatted" data-parent="1.9">11:07:41.336 request:
 1 &gt; GET https://rickandmortyapi.com/api/character/1
 1 &gt; Host: rickandmortyapi.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:52:04.920 response time in milliseconds: 369
+11:07:41.963 response time in milliseconds: 603
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 27853
+1 &lt; Age: 2653
 1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Status: &quot;Netlify Edge&quot;; hit
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 &lt; Date: Mon, 05 Feb 2024 14:07:41 GMT
 1 &lt; Etag: W/&quot;a9f-I68Cx5oSPFclkl+Wy2Fr9jNsFS8&quot;
-1 &lt; Expires: Thu, 30 Nov 2023 12:07:52 GMT
+1 &lt; Expires: Thu, 08 Feb 2024 13:23:29 GMT
 1 &lt; Server: Netlify
 1 &lt; Strict-Transport-Security: max-age=31536000
-1 &lt; Vary: Accept-Encoding
-1 &lt; X-Nf-Request-Id: 01HG95DH14D6TTKBC9FZN7G8M0
+1 &lt; X-Nf-Request-Id: 01HNWSH7V757YP85G59ZFD92Q4
 1 &lt; X-Powered-By: Express
 {&quot;id&quot;:1,&quot;name&quot;:&quot;Rick Sanchez&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/1.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/1&quot;,&quot;created&quot;:&quot;2017-11-04T18:48:46.250Z&quot;}
 
@@ -268,7 +268,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.name == &#39;Rick Sanchez&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">20</div>
   </div>
 
    
@@ -352,7 +352,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -361,7 +361,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.14">16:52:04.935 [print] {
+  <div class="preformatted" data-parent="1.14">11:07:41.996 [print] {
   &quot;id&quot;: 1,
   &quot;name&quot;: &quot;Rick Sanchez&quot;,
   &quot;status&quot;: &quot;Alive&quot;,
@@ -454,7 +454,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>461</span>
+              <span>ms:</span>&nbsp;<span>795</span>
             </div>
           </div>
           
@@ -468,10 +468,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/schemas/character.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/jsonResponse/character.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -480,7 +480,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.6">16:52:04.443 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.6">11:07:41.163 karate.env system property was: null 
 </div>   
 
   
@@ -500,7 +500,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlRickAndMorty</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -528,7 +528,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;character&#39;, &#39;2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">17</div>
   </div>
 
    
@@ -556,7 +556,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">371</div>
+    <div class="time-cell passed">626</div>
   </div>
 
    
@@ -565,27 +565,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.9">16:52:04.550 request:
+  <div class="preformatted" data-parent="2.9">11:07:41.336 request:
 1 &gt; GET https://rickandmortyapi.com/api/character/2
 1 &gt; Host: rickandmortyapi.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:52:04.919 response time in milliseconds: 369
+11:07:41.945 response time in milliseconds: 602
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 27853
+1 &lt; Age: 116529
 1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Status: &quot;Netlify Edge&quot;; hit
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 &lt; Date: Mon, 05 Feb 2024 14:07:41 GMT
 1 &lt; Etag: W/&quot;a6e-zQHAPIKFfD+Wv+P+4aCju24Mapw&quot;
-1 &lt; Expires: Thu, 30 Nov 2023 12:07:53 GMT
+1 &lt; Expires: Wed, 07 Feb 2024 05:45:32 GMT
 1 &lt; Server: Netlify
 1 &lt; Strict-Transport-Security: max-age=31536000
-1 &lt; Vary: Accept-Encoding
-1 &lt; X-Nf-Request-Id: 01HG95DH14TKFXQFA5A6Z866AQ
+1 &lt; X-Nf-Request-Id: 01HNWSH7V5RJXMREVSJTWD3TNW
 1 &lt; X-Powered-By: Express
 {&quot;id&quot;:2,&quot;name&quot;:&quot;Morty Smith&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/2.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/2&quot;,&quot;created&quot;:&quot;2017-11-04T18:50:21.651Z&quot;}
 
@@ -608,7 +608,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -636,7 +636,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.name == &#39;Morty Smith&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -720,7 +720,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -729,7 +729,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.14">16:52:04.935 [print] {
+  <div class="preformatted" data-parent="2.14">11:07:42.011 [print] {
   &quot;id&quot;: 2,
   &quot;name&quot;: &quot;Morty Smith&quot;,
   &quot;status&quot;: &quot;Alive&quot;,
@@ -822,7 +822,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>940</span>
+              <span>ms:</span>&nbsp;<span>1228</span>
             </div>
           </div>
           
@@ -836,10 +836,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/bodies/body.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/jsonRequest/body.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -848,7 +848,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.23">16:52:04.442 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.23">11:07:41.165 karate.env system property was: null 
 </div>   
 
   
@@ -865,10 +865,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/schemas/pet.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/jsonResponse/pet.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -896,7 +896,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlPetStore</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1036,7 +1036,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">871</div>
+    <div class="time-cell passed">1124</div>
   </div>
 
    
@@ -1045,7 +1045,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.30">16:52:04.592 request:
+  <div class="preformatted" data-parent="1.30">11:07:41.391 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; &#39;accept&#39;: application/json
 1 &gt; &#39;Content-Type&#39;: application/json
@@ -1053,13 +1053,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Content-Length: 138
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
 
-16:52:05.409 response time in milliseconds: 817
+11:07:42.445 response time in milliseconds: 1054
 1 &lt; 200
-1 &lt; Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 &lt; Date: Mon, 05 Feb 2024 14:07:42 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1144,7 +1144,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response == petSchema</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1172,7 +1172,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1181,7 +1181,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.34">16:52:05.414 [print] {
+  <div class="preformatted" data-parent="1.34">11:07:42.445 [print] {
   &quot;id&quot;: 9223372036854775807,
   &quot;category&quot;: {
     &quot;id&quot;: 0,
@@ -1219,8 +1219,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>918</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1227</span>
             </div>
           </div>
           
@@ -1234,10 +1234,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">42</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/bodies/body.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/jsonRequest/body.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -1246,7 +1246,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.42">16:52:04.443 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.42">11:07:41.165 karate.env system property was: null 
 </div>   
 
   
@@ -1263,10 +1263,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">43</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/schemas/pet.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/jsonResponse/pet.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1294,7 +1294,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlPetStore</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1434,7 +1434,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>remove body.tag[0]</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -1443,7 +1443,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.49">16:52:04.549 remove failed: Missing property in path $[&#39;tag&#39;]
+  <div class="preformatted" data-parent="1.49">11:07:41.334 remove failed: Missing property in path $[&#39;tag&#39;]
 </div>   
 
   
@@ -1460,10 +1460,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">50</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>set body.tag[1].id = &#39;15&#39;</span>
+        <span>And</span>&nbsp;<span>set body.tag[1].id = &#39;5&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1491,7 +1491,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>set body.tag[1].name = &#39;tag2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1519,7 +1519,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">836</div>
+    <div class="time-cell passed">1115</div>
   </div>
 
    
@@ -1528,21 +1528,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.52">16:52:04.592 request:
+  <div class="preformatted" data-parent="1.52">11:07:41.390 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; &#39;accept&#39;: application/json
 1 &gt; &#39;Content-Type&#39;: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 177
+1 &gt; Content-Length: 176
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;,&quot;tag&quot;:[null,{&quot;id&quot;:&quot;15&quot;,&quot;name&quot;:&quot;tag2&quot;}]}
+{&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;,&quot;tag&quot;:[null,{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;tag2&quot;}]}
 
-16:52:05.389 response time in milliseconds: 796
+11:07:42.445 response time in milliseconds: 1055
 1 &lt; 200
-1 &lt; Date: Mon, 27 Nov 2023 19:52:05 GMT
+1 &lt; Date: Mon, 05 Feb 2024 14:07:42 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1593,13 +1593,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.54">
-      <div class="step-ref passed">54</div>
+      <div class="step-ref failed">54</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.name == &#39;doggie&#39;</span>
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;dog&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">2</div>
   </div>
 
    
@@ -1608,7 +1608,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.54">11:07:42.445 classpath:examples/Sample.feature:54
+And match response.name == &#39;dog&#39;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;doggie&#39;
+  &#39;dog&#39;
+
+classpath:examples/Sample.feature:54
+</div>   
 
   
 
@@ -1621,13 +1629,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.55">
-      <div class="step-ref passed">55</div>
+      <div class="step-ref skipped">55</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response == petSchema</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1649,13 +1657,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.56">
-      <div class="step-ref passed">56</div>
+      <div class="step-ref skipped">56</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1664,26 +1672,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.56">16:52:05.392 [print] {
-  &quot;id&quot;: 9223372036854775807,
-  &quot;category&quot;: {
-    &quot;id&quot;: 0,
-    &quot;name&quot;: &quot;string&quot;
-  },
-  &quot;name&quot;: &quot;doggie&quot;,
-  &quot;photoUrls&quot;: [
-    &quot;string&quot;
-  ],
-  &quot;tags&quot;: [
-    {
-      &quot;id&quot;: 0,
-      &quot;name&quot;: &quot;string&quot;
-    }
-  ],
-  &quot;status&quot;: &quot;available&quot;
-}
- 
-</div>   
+     
 
   
 

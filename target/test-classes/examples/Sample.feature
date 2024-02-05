@@ -3,7 +3,7 @@ Feature: Sample
 
   @RickAndMorty
   Scenario Outline: Get Character
-    * def RickAndMortySchema = read('classpath:examples/schemas/character.json')
+    * def RickAndMortySchema = read('classpath:examples/jsonResponse/character.json')
     Given url urlRickAndMorty
     And path 'character', '<id_character>'
     When method GET
@@ -20,8 +20,8 @@ Feature: Sample
 
   @petstore
   Scenario Outline: Add a new pet to the store
-    * def body = read('classpath:examples/bodies/body.json')
-    * def petSchema = read('classpath:examples/schemas/pet.json')
+    * def body = read('classpath:examples/jsonRequest/body.json')
+    * def petSchema = read('classpath:examples/jsonResponse/pet.json')
     Given url urlPetStore
     And path 'pet'
     And header 'accept' = 'application/json'
@@ -39,15 +39,15 @@ Feature: Sample
 
   @petstore @t
   Scenario Outline: Add a new pet to the store
-    * def body = read('classpath:examples/bodies/body.json')
-    * def petSchema = read('classpath:examples/schemas/pet.json')
+    * def body = read('classpath:examples/jsonRequest/body.json')
+    * def petSchema = read('classpath:examples/jsonResponse/pet.json')
     Given url urlPetStore
     And path 'pet'
     And header 'accept' = 'application/json'
     And header 'Content-Type' = 'application/json'
     And request body
     And remove body.tag[0]
-    And set body.tag[1].id = '15'
+    And set body.tag[1].id = '5'
     And set body.tag[1].name = 'tag2'
     When method POST
     Then status 200
@@ -57,4 +57,4 @@ Feature: Sample
 
     Examples:
       | name   |
-      | doggie |
+      | dog |

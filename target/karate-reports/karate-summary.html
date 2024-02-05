@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("b37ec292-f798-4d5c-adb5-a88d40465c4f",{name:"User"});
+    posthog.identify("771402d6-979b-4d67-a175-ab66bba0cf3b",{name:"carla"});
     posthog.capture("report_summary",{karate_version:"1.2.0",karate_meta:null});
   }
 });
@@ -37,15 +37,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Features</div>
   </div>         
   <div id="nav-date">
-    <div>2023-11-27 04:52:06 p. m.</div>
+    <div>2024-02-05 11:07:44 a. m.</div>
   </div>        
 </div>
 
@@ -67,15 +67,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             </tr>
           </thead>
           <tbody>
-            <tr class="passed">              
+            <tr class="failed">              
               <td>
                 <a href="examples.Sample.html">examples/Sample.feature</a>
               </td>
               <td>Sample</td>
+              <td class="num">3</td>
+              <td class="num">1</td>
               <td class="num">4</td>
-              <td class="num">0</td>
-              <td class="num">4</td>
-              <td class="num">2781</td>            
+              <td class="num">4024</td>            
             </tr>
             <tr class="passed">              
               <td>
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               <td class="num">2</td>
               <td class="num">0</td>
               <td class="num">2</td>
-              <td class="num">857</td>            
+              <td class="num">2045</td>            
             </tr>            
           </tbody>
         </table>
