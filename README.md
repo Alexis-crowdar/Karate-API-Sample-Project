@@ -1,7 +1,7 @@
 #  LIPPIA API Sample Project Karate
 
 ## Purpose:
-The following project has the purpose of demonstrate and let test automation developers to to test API using the framework **Karate**. An XML report is generated in a format compatible with **LTM's REST API**. This report encapsulates the test information and execution results. Upon completion of the execution, the plugin utilizes LTM's REST API to upload the XML report to the LTM platform.
+The following project has the purpose of demonstrate and let test automation developers to test API using the framework **Karate**. An XML report is generated in a format compatible with **LTM's REST API**. This report encapsulates the test information and execution results. Upon completion of the execution, the plugin utilizes LTM's REST API to upload the XML report to the LTM platform.
 
 ## System Requirements:
 - JDK: [https://docs.oracle.com/en/java/javase/index.html](https://docs.oracle.com/en/java/javase/index.html)
@@ -10,7 +10,7 @@ The following project has the purpose of demonstrate and let test automation dev
 # Reports integrations
 We believe that reports should clearly, comprehensively, and engagingly communicate the results of our testing. This ensures that our clients have a thorough understanding of their product's performance and behavior, as well as the team's performance, providing a complete understanding of the findings obtained.
 
-- **Lippia Test Manager** una solución que combina resultados de pruebas manuales y automatizadas en una sola plataforma. Para saber más ver [Lippia.io](https://lippia.io)
+- **Lippia Test Manager** A solution that combines manual and automated test results in a single platform. For more information, go to  [Lippia.io](https://lippia.io)
 - **KarateReport** a community solution for simple reports.
 ### [](#lippia-test-manager)Lippia Test Manager
 
