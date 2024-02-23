@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("771402d6-979b-4d67-a175-ab66bba0cf3b",{name:"carla"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>examples.Sample</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-02-05 11:07:43 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:18]"><span>[1.1:18]</span> <span>Get Character</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:19]"><span>[1.2:19]</span> <span>Get Character</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:38]"><span>[2.1:38]</span> <span>Add a new pet to the store</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3.1:60]"><span>[3.1:60]</span> <span>Add a new pet to the store</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/Sample.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Sample</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Sample</a><a class="badge badge-primary" href="karate-tags.html">RickAndMorty</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:18]</span>
+                <span class="scenario-name">Get Character</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>774</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/jsonResponse/character.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">11:07:41.163 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlRickAndMorty</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;character&#39;, &#39;1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">632</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">11:07:41.336 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/1
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:07:41.963 response time in milliseconds: 603
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 2653
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Status: &quot;Netlify Edge&quot;; hit
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 05 Feb 2024 14:07:41 GMT
+1 &lt; Etag: W/&quot;a9f-I68Cx5oSPFclkl+Wy2Fr9jNsFS8&quot;
+1 &lt; Expires: Thu, 08 Feb 2024 13:23:29 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01HNWSH7V757YP85G59ZFD92Q4
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Rick Sanchez&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/1.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/1&quot;,&quot;created&quot;:&quot;2017-11-04T18:48:46.250Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;Rick Sanchez&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == &#39;Alive&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == RickAndMortySchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">11:07:41.996 [print] {
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Rick Sanchez&quot;,
+  &quot;status&quot;: &quot;Alive&quot;,
+  &quot;species&quot;: &quot;Human&quot;,
+  &quot;type&quot;: &quot;&quot;,
+  &quot;gender&quot;: &quot;Male&quot;,
+  &quot;origin&quot;: {
+    &quot;name&quot;: &quot;Earth (C-137)&quot;,
+    &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+  },
+  &quot;location&quot;: {
+    &quot;name&quot;: &quot;Citadel of Ricks&quot;,
+    &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/3&quot;
+  },
+  &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/1.jpeg&quot;,
+  &quot;episode&quot;: [
+    &quot;https://rickandmortyapi.com/api/episode/1&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/2&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/3&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/4&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/5&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/6&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/7&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/8&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/9&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/10&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/11&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/12&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/13&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/14&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/15&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/16&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/17&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/18&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/19&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/20&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/21&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/23&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/24&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/25&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/26&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/27&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/28&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/29&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/30&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/31&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/32&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/33&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/34&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/35&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/36&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/37&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/38&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/39&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/40&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/41&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/42&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/43&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/44&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/45&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/46&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/47&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/48&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/49&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/50&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/51&quot;
+  ],
+  &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/1&quot;,
+  &quot;created&quot;: &quot;2017-11-04T18:48:46.250Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Sample</a><a class="badge badge-primary" href="karate-tags.html">RickAndMorty</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:19]</span>
+                <span class="scenario-name">Get Character</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>795</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def RickAndMortySchema = read(&#39;classpath:examples/jsonResponse/character.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.6">11:07:41.163 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlRickAndMorty</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;character&#39;, &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">626</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.9">11:07:41.336 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/2
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:07:41.945 response time in milliseconds: 602
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 116529
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Status: &quot;Netlify Edge&quot;; hit
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 05 Feb 2024 14:07:41 GMT
+1 &lt; Etag: W/&quot;a6e-zQHAPIKFfD+Wv+P+4aCju24Mapw&quot;
+1 &lt; Expires: Wed, 07 Feb 2024 05:45:32 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01HNWSH7V5RJXMREVSJTWD3TNW
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:2,&quot;name&quot;:&quot;Morty Smith&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/2.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/2&quot;,&quot;created&quot;:&quot;2017-11-04T18:50:21.651Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;Morty Smith&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == &#39;Alive&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == RickAndMortySchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">11:07:42.011 [print] {
+  &quot;id&quot;: 2,
+  &quot;name&quot;: &quot;Morty Smith&quot;,
+  &quot;status&quot;: &quot;Alive&quot;,
+  &quot;species&quot;: &quot;Human&quot;,
+  &quot;type&quot;: &quot;&quot;,
+  &quot;gender&quot;: &quot;Male&quot;,
+  &quot;origin&quot;: {
+    &quot;name&quot;: &quot;unknown&quot;,
+    &quot;url&quot;: &quot;&quot;
+  },
+  &quot;location&quot;: {
+    &quot;name&quot;: &quot;Citadel of Ricks&quot;,
+    &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/3&quot;
+  },
+  &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/2.jpeg&quot;,
+  &quot;episode&quot;: [
+    &quot;https://rickandmortyapi.com/api/episode/1&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/2&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/3&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/4&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/5&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/6&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/7&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/8&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/9&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/10&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/11&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/12&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/13&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/14&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/15&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/16&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/17&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/18&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/19&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/20&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/21&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/23&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/24&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/25&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/26&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/27&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/28&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/29&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/30&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/31&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/32&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/33&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/34&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/35&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/36&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/37&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/38&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/39&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/40&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/41&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/42&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/43&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/44&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/45&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/46&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/47&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/48&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/49&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/50&quot;,
+    &quot;https://rickandmortyapi.com/api/episode/51&quot;
+  ],
+  &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/2&quot;,
+  &quot;created&quot;: &quot;2017-11-04T18:50:21.651Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">petstore</a><a class="badge badge-primary" href="karate-tags.html">Sample</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:38]</span>
+                <span class="scenario-name">Add a new pet to the store</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1228</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/jsonRequest/body.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">11:07:41.165 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/jsonResponse/pet.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlPetStore</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header &#39;accept&#39; = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header &#39;Content-Type&#39; = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1124</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.30">11:07:41.391 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; &#39;accept&#39;: application/json
+1 &gt; &#39;Content-Type&#39;: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 138
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+11:07:42.445 response time in milliseconds: 1054
+1 &lt; 200
+1 &lt; Date: Mon, 05 Feb 2024 14:07:42 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;doggie&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == petSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.34">11:07:42.445 [print] {
+  &quot;id&quot;: 9223372036854775807,
+  &quot;category&quot;: {
+    &quot;id&quot;: 0,
+    &quot;name&quot;: &quot;string&quot;
+  },
+  &quot;name&quot;: &quot;doggie&quot;,
+  &quot;photoUrls&quot;: [
+    &quot;string&quot;
+  ],
+  &quot;tags&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;string&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;available&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:60]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">petstore</a><a class="badge badge-primary" href="karate-tags.html">t</a><a class="badge badge-primary" href="karate-tags.html">Sample</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:60]</span>
+                <span class="scenario-name">Add a new pet to the store</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1227</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/jsonRequest/body.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.42">11:07:41.165 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def petSchema = read(&#39;classpath:examples/jsonResponse/pet.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlPetStore</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header &#39;accept&#39; = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header &#39;Content-Type&#39; = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>remove body.tag[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.49">11:07:41.334 remove failed: Missing property in path $[&#39;tag&#39;]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set body.tag[1].id = &#39;5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set body.tag[1].name = &#39;tag2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.52">11:07:41.390 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; &#39;accept&#39;: application/json
+1 &gt; &#39;Content-Type&#39;: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 176
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;,&quot;tag&quot;:[null,{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;tag2&quot;}]}
+
+11:07:42.445 response time in milliseconds: 1055
+1 &lt; 200
+1 &lt; Date: Mon, 05 Feb 2024 14:07:42 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref failed">54</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;dog&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.54">11:07:42.445 classpath:examples/Sample.feature:54
+And match response.name == &#39;dog&#39;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;doggie&#39;
+  &#39;dog&#39;
+
+classpath:examples/Sample.feature:54
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == petSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

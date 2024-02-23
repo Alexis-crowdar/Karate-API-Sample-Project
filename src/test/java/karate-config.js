@@ -8,8 +8,7 @@ function fn() {
     env: env,
     myVarName: 'someValue',
     urlRickAndMorty: 'https://rickandmortyapi.com/api/',
-    urlTokenLippiaAPI: 'https://authdev.lippia.io/realms/mvptest.lippia.io/protocol/openid-connect/token',
-    urlLippiaAPI: 'https://backend-mvp.test.lippia.io/testmanager-mvp/'
+    urlPetStore: 'https://petstore.swagger.io/v2/',
   }
   if (env == 'dev') {
     // customize

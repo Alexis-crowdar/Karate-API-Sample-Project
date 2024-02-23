@@ -2,23 +2,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mycompany</groupId>
-    <artifactId>myproject</artifactId>
-    <version>y</version>
+    <groupId>org.example</groupId>
+    <artifactId>lippia-api-sample-project-karate</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
+        <java.version>14</java.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>
         <karate.version>1.2.0</karate.version>
-        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-        <test.manager.project.code>${env.LTM_PROJECT_CODE}</test.manager.project.code>
-        <test.manager.run.name>${env.LTM_RUN_NAME}</test.manager.run.name>
-        <test.manager.username>${env.LTM_USERNAME}</test.manager.username>
-        <test.manager.password>${env.LTM_PASSWORD}</test.manager.password>
-        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <ltm.apihost>https://runs.crowdaracademy.lippia.io/runs</ltm.apihost>
+        <ltm.username>GenericUserLTM</ltm.username>
+        <ltm.password>GenericUserLTM</ltm.password>
+        <!--- RUN NAME -->
+        <ltm.run_name>aut sample #12</ltm.run_name>
+        <!--- CODE PROJECT -->
+        <ltm.project_code>KASP</ltm.project_code>
     </properties>
 
     <dependencies>
@@ -30,25 +31,10 @@
         </dependency>
         <dependency>
             <groupId>io.lippia.report</groupId>
-            <artifactId>ltm-cucumber4-adapter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <artifactId>ltm-karate-adapter</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <id>inyectorTest</id>
-            <properties>
-                <profileName>inyectorTest</profileName>
-                <testmanager.host>https://runs.test.lippia.io</testmanager.host>
-                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                <test.manager.project.code>KARATE</test.manager.project.code>
-                <test.manager.run.name>Pruebas inyeccion karate</test.manager.run.name>
-                <TEST_MANAGER_USERNAME>${test.manager.username}</TEST_MANAGER_USERNAME>
-                <TEST_MANAGER_PASSWORD>${test.manager.password}</TEST_MANAGER_PASSWORD>
-                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-            </properties>
-        </profile>
-    </profiles>
     <build>
         <testResources>
             <testResource>
@@ -73,30 +59,53 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven.surefire.version}</version>
-                <configuration>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <systemPropertyVariables>
-                    <!--<zalenium.hub>${crowdar.driverHub}</zalenium.hub>-->
-                    <!--<build.identifier>${buildIdentifier}</build.identifier>-->
-                        <TEST_MANAGER_API_HOST>${testmanager.host}</TEST_MANAGER_API_HOST>
-                        <TEST_MANAGER_RUN_NAME>${test.manager.run.name}</TEST_MANAGER_RUN_NAME>
-                        <TEST_MANAGER_PROJECT_CODE>${test.manager.project.code}</TEST_MANAGER_PROJECT_CODE>
-                        <TEST_MANAGER_USERNAME>${test.manager.username}</TEST_MANAGER_USERNAME>
-                        <TEST_MANAGER_PASSWORD>${test.manager.password}</TEST_MANAGER_PASSWORD>
+                        <TEST_MANAGER_API_HOST>${ltm.apihost}</TEST_MANAGER_API_HOST>
+                        <TEST_MANAGER_RUN_NAME>${ltm.run_name}</TEST_MANAGER_RUN_NAME>
+                        <TEST_MANAGER_PROJECT_CODE>${ltm.project_code}</TEST_MANAGER_PROJECT_CODE>
+                        <TEST_MANAGER_USERNAME>${ltm.username}</TEST_MANAGER_USERNAME>
+                        <TEST_MANAGER_PASSWORD>${ltm.password}</TEST_MANAGER_PASSWORD>
                     </systemPropertyVariables>
-
                 </configuration>
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>users-tests</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>**/UsersRunner.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 
+        <profile>
+            <id>examples-tests</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>**/ExamplesTest.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

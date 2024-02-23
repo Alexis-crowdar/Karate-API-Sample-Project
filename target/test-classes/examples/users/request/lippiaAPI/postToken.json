@@ -1,6 +1,0 @@
-{
-  "client_id" : "admin-cli",
-  "grant_type" : "password",
-  "username": "automation.ltm",
-  "password": "1234"
-}
